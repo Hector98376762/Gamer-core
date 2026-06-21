@@ -192,7 +192,7 @@
         rgba(0,0,0,.55),
         rgba(0,0,0,0.55)
 
-    ),url(/img/hero.jpeg);
+    ),url(img/hero.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
