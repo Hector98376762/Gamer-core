@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+ <header class="header">
+    <div class="logo">
+        <h1>GAMER <span>CORE</span></h1>
+    </div>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#Ofertas">Ofertas</a></li>
+            <li><a href="#Contactos">Contactos</a></li>
+        </ul>
+    </nav>
+
+   <div class="carrito" id="carrito">
+    <i class="bi bi-bag-check-fill"></i>
+    <span id="cons" class="contador">0</span>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+<div class="carrito-sidebar" id="carritoSidebar">
+
+    <div class="carrito-header">
+        <h2>Tu carrito</h2>
+        <button onclick="cerrarCarrito()">✖</button>
+    </div>
+
+    <div id="listaCarrito" class="carrito-lista"></div>
+
+    <div class="carrito-footer">
+        <p>Total: $<span id="total">0.00</span></p>
+       <a href="#" class="btn-comprar-final" id="btnWhatsapp" >
+    Comprar por WhatsApp
+</a>
+    </div>
+
+</div>
+    
+    <div class="hamburguesa" id="btn-menu">
+        <i class="bi bi-list"></i>
+    </div>
+ </header>
+
+ <hr>
+
+
+ <main>
+    <section class="hero" id="Inicio">
+        <div class="container">
+            <div class="texto">
+                <h2>Domina el juego con <br>Tecnologia de <span>Elite</span></h2>
+                <p>No dejes que el lag decida tu destino. <br> equipamiento de alto rendimiento para <br> gamer que no aceptan menos del 100%</p>
+            </div>
+
+            <div class="btn">
+                <a href="#Servicios" class="btn-primary">Ver Servicios</a>
+                  <a href="#Contactos" class="btn-segundary">Contactanos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicios" id="Servicios">
+        <div class="container">
+            <div class="texto-servicio">
+                <h2>Nuestros <span>servicios</span></h2>
+                <p>Siempre buscamos la comodidad del cliente</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                   <i class="bi bi-cpu"></i>
+                   <h3>Custom Buil</h3>
+                   <p>Decoramos tu estacion de batalla segun tu presupuesto.</p>
+                   
+                </div>
+
+                 <div class="card">
+                   <i class="bi bi-box-seam"></i>
+                   <h3>Envio blindado</h3>
+                   <p>Logistica especializada para que tu hardware lleguen intacto.</p>
+                </div>
+
+                 <div class="card">
+                   <i class="bi bi-headset"></i>
+                   <h3>Soporte tecnico Elite</h3>
+                   <p>Asesoria de expertos para optimizar tu rendimiento.</p>
+                </div>
+
+                 <div class="card">
+                   <i class="bi bi-shield-check"></i>
+                   <h3>Garantia Total</h3>
+                   <p>Respaldo directo en piezzas y componentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos" id="Productos">
+    <div class="container">
+        <div class="texto-servicio">
+            <h2>Nuestros <span>Productos</span></h2>
+            <p>Aqui estan Todos nuestros Productos</p>
+        </div>
+         
+        <div class="grid-grid">
+           <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Mouse Gamer Pro (1).webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="324">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Mouse Gamer Pro</h3>
+        
+       
+        <p class="product-description">
+            Sensor de alta precision y luces RGB para maxima velicidad.
+        </p>
+
+        <span class="product-price">$49.99</span>
+
+       
+       
+         
+        <div class="btn">
+         
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',49.99,'Mouse Gamer Pro (1).webp')">
+             <i class="bi bi-cart-check"></i>
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Teclado Mecanico RGB (1).webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="600">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Teclado Mecanico RGB</h3>
+        
+       
+        <p class="product-description">
+            Switch azul para una respuesta rapida y luces LED.
+        </p>
+
+        <span class="product-price">$55.00</span>
+
+       
+        <div class="btn">
+        
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',55.00,'Teclado Mecanico RGB (1).webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+        
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Audifonos Pro Surround.webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="400" height="400">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Audifonos Pro Surround</h3>
+        
+       
+        <p class="product-description">
+            Sonido envolvente 7.1 y microfono con mucha Calidad.
+        </p>
+
+        <span class="product-price">$47.00</span>
+
+       
+        
+         
+        <div class="btn">
+        
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',47.00,'Audifonos Pro Surround.webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Mouse Pad XL Speed.webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="522">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Mouse Pad XL Speed</h3>
+        
+       
+        <p class="product-description">
+            Superficie de microfibra optimazada para movimientos.
+        </p>
+
+        <span class="product-price">$15.00</span>
+
+       
+       
+         
+        <div class="btn">
+         
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',15.00,'Mouse Pad XL Speed.webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Monitor Gaming 144Hz (1).webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="597">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Monitor Gaming 144Hz</h3>
+        
+       
+        <p class="product-description">
+            Pantalla Full HD con tasa de refresco ultra rapida para una fluidez total
+        </p>
+
+        <span class="product-price">Nuevo</span>
+
+       
+       
+        <div class="btn-car">
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',15.00,'Monitor Gaming 144Hz (1).webp')">
+            <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Silla Ergonomica Gamer (1).webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="600">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Silla Ergonomica Gamer</h3>
+        
+       
+        <p class="product-description">
+           Soporte lumbar ajustable y reclinacion para estar comodo y muy satisfecho.
+        </p>
+
+        <span class="product-price">$150.00</span>
+
+       
+    
+         
+        <div class="btn">
+         
+        <button class="add-to-cart-btn" onclick="agregarAlCarrito('Mouse Gamer',15.00,'Silla Ergonomica Gamer (1).webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Microfono de Condensador.webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="600" height="300">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Microfono Gamer</h3>
+        
+       
+        <p class="product-description">
+            Calidad de estudio para tus streams y grabaciones con conexion USB.
+        </p>
+
+        <span class="product-price">$65.00</span>
+
+       
+       
+        <div class="btn">
+        
+        <button class="add-to-cart-btn " onclick="agregarAlCarrito('Mouse Gamer',15.00,'Microfono de Condensador.webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+
+     <div class="product-card">
+    
+    <div class="product-image">
+        <img src="img/Camara web Full HD.webp" alt="Gaming Mouse" class="cart-img" loading="lazy" width="400" height="400">
+    </div>
+
+    <div class="product-info">
+       
+        <div class="rating">
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i>
+           <i class="bi bi-star-fill"></i> 
+        </div>
+
+        <h3 class="product-title">Camara web Full HD</h3>
+        
+       
+        <p class="product-description">
+            Resolucion de 1080p con enfoque automatico para una imagen nitida .
+        </p>
+
+        <span class="product-price">Nuevo</span>
+
+       
+       
+         
+        <div class="btn">
+         
+        <button class="add-to-cart-btn"  onclick="agregarAlCarrito('Mouse Gamer',15.00,'Camara web Full HD.webp')">
+             <i class="bi bi-cart-check"></i>
+            
+            Agregar al carrito</button>
+        </div>
+         </div>
+    </div>
+   </div>
+ </div>
+</section>
+
+<section class="ofertas" id="Ofertas">
+    <div class="container">
+        <div class="texto-servicio">
+            <h2>Nuestras <span>Ofertas</span></h2>
+            <p>Aqui siempre tenemos ofertas para nuestros clientes</p>
+        </div>
+
+        <div class="grid-grid">
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Combo Setup Pro.webp" alt="" loading="lazy" width="600" height="600">
+                </div>
+                
+                <h3 class="product-title">Combo Setup Pro</h3>
+                <p class="product-description">Teclado mecánico, mouse de alta precisión y headset con sonido 7.1 </p>
+                 
+                <div class="precis">
+                    <span class="total">$55.00</span>
+                    <p class="before">$40.00</p>
+                    <span class="ofert">En oferta</span>
+                </div> <div class="btn-ofer">
+                    <button class="mi-btn" onclick="agregarAlCarrito('Combo Setud',40.00,'img/Combo Setup Pro.webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Tarjeta Gráfica Next-Gen.webp" alt="" loading="lazy" width="600" height="338">
+                </div>
+                
+                <h3 class="product-title">Tarjeta Gráfica Next-Gen</h3>
+                <p class="product-description">Potencia extrema para jugar en Ultra con Ray Tracing. Unidades limitadas.</p>
+                
+                <div class="precis">
+                    <span class="total">$56.00</span>
+                    <p class="before">$49.00</p>
+                    <span class="ofert">En oferta</span>
+                </div>
+                      
+                <div class="btn-ofer">
+                    <button class="mi-btn" onclick="agregarAlCarrito('Tarjeta Gráfica Next-Gen',49.00,'Tarjeta Gráfica Next-Gen.webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Pack Velocidad (RAM + SSD).webp" alt="" loading="lazy" width="600" height="335">
+                </div>
+                
+                <h3 class="product-title">Pack Velocidad </h3>
+                <p class="product-description">32GB de memoria RAM y 1TB SSD NVMe para eliminar las pantallas .</p>
+                 
+                <div class="precis">
+                    <span class="total">$28.00</span>
+                    <p class="before">$23.00</p>
+                    <span class="ofert">En oferta</span>
+                </div>
+
+                <div class="btn-ofer">
+                    <button class="mi-btn" onclick="agregarAlCarrito('Pack Velocidad (RAM + SSD)',23.00,'Pack Velocidad (RAM + SSD).webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Monitor Curvo 240Hz.webp" alt="" loading="lazy" width="600" height="338">
+                </div>
+                
+                <h3 class="product-title">Monitor Curvo 240Hz</h3>
+                <p class="product-description">Fluidez competitiva con 1ms de respuesta para shooters y alta tasa de refresco.</p>
+                
+                <div class="precis">
+                    <span class="total">$45.00</span>
+                    <p class="before">$35.00</p>
+                    <span class="ofert">En oferta</span>
+                </div>
+                      
+                <div class="btn-ofer">
+                    <button class="mi-btn" onclick="agregarAlCarrito('Monitor Curvo 240Hz',35.00,'Monitor Curvo 240Hz.webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Control Next-Gen Custom.webp" alt="" loading="lazy" width="600" height="600">
+                </div>
+                
+                <h3 class="product-title">Control Next-Gen Custom</h3>
+                <p class="product-description">Mando ergonómico con gatillos adaptativos y agarre mejorado para PC y consola.</p>
+                 
+                <div class="precis">
+                    <span class="total">$24.00</span>
+                    <p class="before">$19.00</p>
+                    <span class="ofert">En oferta</span>
+                </div>
+                     
+                <div class="btn-ofer">
+                   <button class="mi-btn" onclick="agregarAlCarrito('Control Next-Gen Custom',19.00,'Control Next-Gen Custom.webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-images">
+                    <img src="img/Silla Gamer Endurance.webp" alt="" loading="lazy" width="600" height="391">
+                </div>
+                
+                <h3 class="product-title">Silla Gamer Endurance</h3>
+                <p class="product-description">Soporte lumbar ergonómico y reclinación completa para largas sesiones de juego o código.</p>
+                 
+                <div class="precis">
+                    <span class="total">$33.00</span>
+                    <p class="before">$25.00</p>
+                    <span class="ofert">En oferta</span>
+                </div>
+
+                <div class="btn-ofer">
+                    <button class="mi-btn" onclick="agregarAlCarrito('Silla Gamer Endurance',25.00,'Silla Gamer Endurance.webp')">
+                        <i class="bi bi-cart-check"></i>
+                        Agregar al carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contactos" id="Contactos">
+    <div class="container">
+    
+        <div class="texto-servicio">
+            <h2>Nuestros <span>Contactos</span></h2>
+            <p>¿Deseas contactarnos? Estamos disponibles para ayudarte.</p>
+        </div>
+
+        
+        <div class="info-contacto">
+
+           
+            <div class="item-contacto">
+                <i class="fas fa-phone"></i>
+
+                <div>
+                    <h4>Teléfono</h4>
+                    <p>+1 (809) 943-0075</p>
+                </div>
+            </div>
+
+            
+            <div class="item-contacto">
+                <i class="fas fa-envelope"></i>
+
+                <div>
+                    <h4>Correo Electrónico</h4>
+                    <p>Segurapolancohector@gmail.com</p>
+                </div>
+            </div>
+
+            
+            <div class="item-contacto">
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+                    <h4>Ubicación</h4>
+                    <p>Santo Domingo, República Dominicana</p>
+                </div>
+            </div>
+
+        </div>
+
+       
+        <form action="#" method="post">
+
+            <div class="group">
+                <label for="nombre">Nombre Completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre completo"
+                    required>
+            </div>
+
+            <div class="group">
+                <label for="email">Correo Electrónico</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ingrese su correo electrónico"
+                    required>
+            </div>
+
+            <div class="group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Cuéntanos qué deseas..."
+                    required>
+                </textarea>
+            </div>
+
+          
+              <a href="https://wa.me/8099430075" class="mi-btn" target="_blank">
+                Enviar Mensaje
+              </a>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+    <div class="container-footer">
+      <div class="columna-footer">
+        <h2 class="logo-footer">Gamer <span class="dorado">Core</span></h2>
+        <P>Elevando tu presencia con componentes de alta calidad los mejores en el mercado tenemos todo tipo de piezas gamer.
+        </P>
+      </div>
+
+      <div class="columna-footer">
+        <h3>Explorar</h3>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Servicios">Historia</a></li>
+            <li><a href="#Productos">Productos</a></li>
+            <li><a href="#Contactos">Contactos</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-footer">
+        <h3>SIguenos</h3>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/ hector__ant/" target="_blank">
+               <i class="fab fa-instagram">
+                   
+               </i> instagram
+            </a>
+
+             <a href="https://www.facebook.com/Leury Gusman" target="_blank">
+               <i class="fab fa-facebook">
+                  
+               </i> facebook
+            </a>
+
+             <a href="https://wa.me/8099430075" target="_blank">
+               <i class="fab fa-whatsapp">
+                  
+               </i> whatsapp
+            </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2026 Gamer Core Diseñado
+            por <span class="dorado"> el Ingeniero Hector Developer</span>
+        </p>
+    </div>
+ </foooter>
+</main>
+
+
+
+<script src="app.js/script.js" defer></script>
+</body>
+</html>
