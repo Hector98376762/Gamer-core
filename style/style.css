@@ -188,15 +188,14 @@
 }
 
 .hero {
-    background: linear-gradient(
-        rgba(0,0,0,.55),
-        rgba(0,0,0,0.55)
-
-    ),url(img/hero.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+      background: linear-gradient(
+    rgba(0,0,0, 0.6),
+    rgba(0,0,0, 0.6)
+   ),url(/img/vista.webp);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 85vh;
 }
 
 .hero .container {
